@@ -9,7 +9,7 @@ type Props = {
 export default function Skills({language}: Props) {
   return (
     <div className="min-h-screen flex flex-col md:w-[60%] w-4/6 mx-auto relative mt-[20px] items-center justify-center text-center md:text-start min-w-[280px]">
-      <h3 className="2xl:text-5xl lg:text-4xl sm:text-3xl text-2xl font-bold text-[#40474e]">{language==='english'?"Technologies i've worked with":'Tecnologías con las que trabajé'}</h3>
+      <h3 className="2xl:text-5xl lg:text-4xl sm:text-3xl text-2xl font-bold text-[#40474e]">{language==='english'? (<p>Technologies i&apos;ve worked with</p>):(<p>Tecnologías con las que trabajé</p>)}</h3>
       <div className="w-full flex flex-col justify-center 2xl:mt-7 mt-7 gap-5">
         <div className="md:grid-cols-5 md:grid gap-1 md:gap-3 relative flex flex-wrap">
             {

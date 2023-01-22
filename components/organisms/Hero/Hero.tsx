@@ -29,7 +29,7 @@ export default function Hero({language}: Props) {
           duration: 1
         }} 
         className="flex flex-col md:w-[60%] w-4/6 md:items-start items-center justify-center mt-[50px] md:mt-0">
-            <div className="flex flex-col gap-1 wrap">
+            {/* <div className="flex flex-col gap-1 wrap">
               <h1 className="font-bold text-2xl text-center md:text-4xl lg:text-5xl 2xl:text-6xl text-[#40474e]">Iván Conosciuto</h1>
               <motion.p 
               initial={{x:-20, opacity:0}}
@@ -39,24 +39,27 @@ export default function Hero({language}: Props) {
               className="font-light text-gray-600 text-center md:text-end 2xl:text-xl">
                 {language==='english' ? 'based in Buenos Aires, Argentina.' : 'Ubicado en Buenos Aires, Argentina.'}
               </motion.p>
-            </div> 
+            </div>  */}
             <div className="flex flex-col mt-1">
-              <motion.p 
+              <motion.div
               initial={{x:-20, opacity:0}}
               whileInView={{x:0, opacity:1}}
               transition={{duration:1, delay:.25}}
               className="md:text-xl text-lg font-light text-start text-gray-600 md:w-[70%] 2xl:text-2xl">
-                {/* I'm a 23 years old <span className="font-normal">Full Stack Junior Developer</span> that has been learning and working on several projects using technologies such as ReactJS, Material UI, Bootstrap and more on the frontend side. <br /> On the backend side, i've worked with MongoDB, Express, Sequelize, PHP and Symfony. */}
-                {language==='english' ? (<p>I'm a 23 years old <span className="font-normal">Full Stack Junior Developer</span> that has been learning and working on several projects using technologies such as ReactJS, Material UI, Bootstrap and more on the frontend side. <br /> On the backend side, i've worked with MongoDB, Express, Sequelize, PHP and Symfony.</p>) :
-                 (<p>Soy un <span className="font-normal">Desarrollador Junior Full Stack</span> de 23 años que viene realizando diferentes proyectos usando tecnologías como ReactJS, Material UI, Bootstrap y más desde el lado del frontend. <br /> Desde el lado del backend, trabajé con MongoDB, Express, Sequelize, PHP y Symfony.</p>)}</motion.p>
+                {
+                language==='english' ? 
+                (<p>I'm a 23 years old <span className="font-normal">Full Stack Junior Developer</span> that has been learning and working on several projects using technologies such as ReactJS, Material UI, Bootstrap and more on the frontend side. <br /> On the backend side, i've worked with MongoDB, Express, Sequelize, PHP and Symfony.</p>) 
+                :
+                (<p>Soy un <span className="font-normal">Desarrollador Junior Full Stack</span> de 23 años que viene realizando diferentes proyectos usando tecnologías como ReactJS, Material UI, Bootstrap y más desde el lado del frontend. <br /> Desde el lado del backend, trabajé con MongoDB, Express, Sequelize, PHP y Symfony.</p>)
+                }
+              </motion.div>
               <motion.div 
               initial={{x:-20, opacity:0}}
               whileInView={{x:0, opacity:1}}
               transition={{duration:1, delay:.25}}
               className="mt-5">
                 <p className="font-light text-gray-600 md:text-start text-center 2xl:text-xl">
-                
-                {language==='english' ? 'Navigate through sections' : 'Navegá por las siguientes secciones'}
+                  {language==='english' ? 'Navigate through sections' : 'Navegá por las siguientes secciones'}
                 </p>
                 <div className="flex md:flex-row flex-col space-x-2 justify-center items-center md:justify-start mt-1">
                   {language==='english' ? (

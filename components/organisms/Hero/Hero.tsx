@@ -29,7 +29,7 @@ export default function Hero({language}: Props) {
           duration: 1
         }} 
         className="flex flex-col md:w-[60%] w-4/6 md:items-start items-center justify-center mt-[50px] md:mt-0">
-            {/* <div className="flex flex-col gap-1 wrap">
+            <div className="flex flex-col gap-1 wrap">
               <h1 className="font-bold text-2xl text-center md:text-4xl lg:text-5xl 2xl:text-6xl text-[#40474e]">Iván Conosciuto</h1>
               <motion.p 
               initial={{x:-20, opacity:0}}
@@ -39,7 +39,7 @@ export default function Hero({language}: Props) {
               className="font-light text-gray-600 text-center md:text-end 2xl:text-xl">
                 {language==='english' ? 'based in Buenos Aires, Argentina.' : 'Ubicado en Buenos Aires, Argentina.'}
               </motion.p>
-            </div>  */}
+            </div> 
             <div className="flex flex-col mt-1">
               <motion.div
               initial={{x:-20, opacity:0}}

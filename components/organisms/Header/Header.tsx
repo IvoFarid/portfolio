@@ -7,9 +7,6 @@ type Props = {
 }
 
 export default function Header({language, setLanguage}: Props) {
-  // const [language, setLanguage] = useState('english');
-  
-  console.log(language)
   return (
     <header className="flex sticky top-0 items-start justify-between max-w-7xl mx-auto z-30 xl:items-center py-5">
       <motion.div 

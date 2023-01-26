@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { useState } from 'react';
-// import Image from 'next/image'
 import { Header, Hero, Skills, Projects } from '../components/organisms'
 
 export default function Home() {

@@ -8,13 +8,9 @@ type Props = {
 }
 
 export default function Hero({language}: Props) {
-  // const [text,count] = useTypewriter({
-  //   words: ['Im a 23 years old Full Stack Junior Developer based in Argentina that has been learning and working in projects since mid 2021.'],
-  //   typeSpeed: 32
-  // })
   return (
     <div className="flex flex-col relative">
-      <div className="flex mx-auto mt-32 z-20 relative lg:max-w-4xl 2xl:max-w-7xl xl:max-w-6xl justify-center min-w-[400px] 2xl:items-center 2xl:pt-0 2xl:pb-28">
+      <div className="flex mx-auto mt-16 2xl:mt-32 z-20 relative lg:max-w-4xl 2xl:max-w-7xl xl:max-w-6xl justify-center min-w-[400px] 2xl:items-center 2xl:pt-0 2xl:pb-28">
         <motion.div 
         initial={{
           opacity:0,

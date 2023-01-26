@@ -10,7 +10,7 @@ type Props = {
 export default function Hero({language}: Props) {
   return (
     <div className="flex flex-col relative">
-      <div className="flex mx-auto mt-16 2xl:mt-32 z-20 relative lg:max-w-4xl 2xl:max-w-7xl xl:max-w-6xl justify-center min-w-[400px] 2xl:items-center 2xl:pt-0 2xl:pb-28">
+      <div className="flex mx-auto mt-16 2xl:mt-32 z-20 relative lg:max-w-4xl 2xl:max-w-7xl xl:max-w-6xl justify-center min-w-[400px] xl:pb-16 2xl:items-center 2xl:pt-0 2xl:pb-28">
         <motion.div 
         initial={{
           opacity:0,

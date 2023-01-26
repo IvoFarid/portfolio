@@ -20,7 +20,7 @@ export default function Home() {
       <section id="skills" className="">
         <Skills language={language}/>
       </section>
-      <section id="projects" className="h-full">
+      <section id="projects" className="">
         <Projects language={language}/>
       </section>
     </div>

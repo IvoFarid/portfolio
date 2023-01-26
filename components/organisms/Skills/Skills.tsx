@@ -29,7 +29,7 @@ export default function Skills({language}: Props) {
             }
         </div>
       </div>
-      <img src="darrow.png" alt="sdadsa" className="2xl:mt-[5rem] xl:mt-[2rem] h-8 w-8" />
+      <img src="darrow.png" alt="sdadsa" className="2xl:mt-[5rem] xl:mt-[2rem] mt-8 h-8 w-8" />
     </div>
   )
 }

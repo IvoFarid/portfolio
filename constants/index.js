@@ -185,7 +185,7 @@ export const allProjectsEn = [
   },
   {
     title: 'Chat App',
-    link: 'https://chat-appz.up.railway.app/',
+    link: 'https://chatapp-mi4r.onrender.com/',
     description: "Realtime Chat App made with HTML, CSS, JS and Socket IO.",
     imgUrl: '/ChatDemo.png',  
   },
@@ -224,7 +224,7 @@ export const allProjectsEs = [
   },
   {
     title: 'Chat App',
-    link: 'https://chat-appz.up.railway.app/',
+    link: 'https://chatapp-mi4r.onrender.com/',
     description: "App que permite chatear en tiempo real, hecho con HTML, CSS, JS y Socket IO.",
     imgUrl: '/ChatDemo.png',  
   },

@@ -3,7 +3,7 @@ import useLocalStorage from "./useLocalStorage";
 
 function useColorMode() {
   const [colorMode, setColorMode] = useLocalStorage("color-mode", "light");
-
+  
   useEffect(()=>{
     const className = 'dark';
     const bodyClasses = window.document.body.classList;

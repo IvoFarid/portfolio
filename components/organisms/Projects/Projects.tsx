@@ -24,9 +24,9 @@ export default function Projects({
               return (
                 <Link href={`${project.link}`} key={idx} className="relative overflow:hidden flex flex-col xl:gap-2 gap-3 border border-slate-300 hover:bg-[#40474e] dark:border-slate-800 transition duration-300 cnt-photo rounded-lg hover:text-white items-center dark:text-slate-200">
                 {/* cambie link arriba */}
-                  <div className="max-w-full max-h-full overflow-hidden rounded-md mt-5">
+                  <div className="max-w-full max-h-full overflow-hidden rounded-md mt-3">
                     {/* cambie imagen abajo */}
-                    <img src={project.imgUrl} alt={`project photo of ${project.title}`} className="hover:scale-[1.15] transition duration-500 object-fill h-[150px] 2xl:h-[160px]"/>
+                    <img src={project.imgUrl} alt={`project photo of ${project.title}`} className="hover:scale-[1.15] transition duration-500 object-fill h-[160px] 2xl:h-[170px]"/>
                   </div>
                   <div className="flex flex-col items-center pb-5 px-5">
                     {/* CAMBIE 2 P ABAJO*/}
@@ -41,11 +41,14 @@ export default function Projects({
           (
             allProjectsEs.map((project,idx)=>{
               return (
-                <Link href={`${project.link}`} key={idx} className="relative overflow:hidden flex flex-col xl:gap-2 gap-3 border hover:bg-[#40474e] bg-white transition duration-300 cnt-photo rounded-lg hover:text-white items-center">
-                  <div className="max-w-full max-h-full overflow-hidden rounded-md mt-5">
-                    <img src={project.imgUrl} alt={`project photo of ${project.title}`} className="hover:scale-[1.15] transition duration-500 object-fill h-[150px] 2xl:h-[160px]"/>
+                <Link href={`${project.link}`} key={idx} className="relative overflow:hidden flex flex-col xl:gap-2 gap-3 border border-slate-300 hover:bg-[#40474e] dark:border-slate-800 transition duration-300 cnt-photo rounded-lg hover:text-white items-center dark:text-slate-200">
+                {/* cambie link arriba */}
+                  <div className="max-w-full max-h-full overflow-hidden rounded-md mt-3">
+                    {/* cambie imagen abajo */}
+                    <img src={project.imgUrl} alt={`project photo of ${project.title}`} className="hover:scale-[1.15] transition duration-500 object-fill h-[160px] 2xl:h-[170px]"/>
                   </div>
                   <div className="flex flex-col items-center pb-5 px-5">
+                    {/* CAMBIE 2 P ABAJO*/}
                     <p className="2xl:text-xl xl:text-normal">{project.title}</p>
                     <p className="text-center xl:text-sm 2xl:text-normal font-light">{project.description}</p>
                   </div>

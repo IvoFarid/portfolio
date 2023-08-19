@@ -70,6 +70,10 @@ export const allSkills = [
   {
     name: 'GIT',
     imgUrl: '/git.png'
+  },
+  {
+    name: 'Hotwire Turbo',
+    imgUrl: '/hotwire.jpg'
   }
 ];
 
@@ -170,19 +174,21 @@ export const allProjectsEn = [
     link: 'https://db-anime.vercel.app/',
     description: "App to search for any Anime and see all it's information made with React and Material UI.",
     imgUrl: '/animedb.png',
-  },
+  }
+  ,
   {
-    title: 'Symfony01',
-    link: 'https://github.com/IvoFarid/symfony01',
-    description: "App that allows users to post, comment, follow each other, etc. Made with Symfony, Twig and Bootstrap.",
-    imgUrl: '/Symfony01Demo.png',
-  },
-  {
-    title: 'Campgrounds',
-    link: 'https://project01campgrounds.herokuapp.com/',
-    description: "App that allows users publish campgrounds on a cluster map. Made with HTML, EJS and Bootstrap.",
-    imgUrl: '/campgrounds.png',
-  },
+    title: 'XClone App',
+    link: 'https://github.com/IvoFarid/finalSX',
+    description: "Twitter clone, made with Symfony, SymfonyUX initiative, Tailwind and Hotwire Turbo.",
+    imgUrl: '/symfony1.png',
+  }
+  ,
+  // {
+  //   title: 'Campgrounds',
+  //   link: 'https://project01campgrounds.herokuapp.com/',
+  //   description: "App that allows users publish campgrounds on a cluster map. Made with HTML, EJS and Bootstrap.",
+  //   imgUrl: '/campgrounds.png',
+  // },
   {
     title: 'Chat App',
     link: 'https://chatapp-mi4r.onrender.com/',
@@ -209,19 +215,28 @@ export const allProjectsEs = [
     link: 'https://db-anime.vercel.app/',
     description: "App para buscar cualquier Animé y ver toda su información, realizada con React y Material UI.",
     imgUrl: '/animedb.png',
-  },
+  }
+  ,
   {
-    title: 'Symfony01',
-    link: 'https://github.com/IvoFarid/symfony01',
-    description: "App que permite a los usuarios postear, comentar, seguirse, etc. Hecha con Symfony, Twig y Bootstrap.",
-    imgUrl: '/Symfony01Demo.png',
-  },
-  {
-    title: 'Campgrounds',
-    link: 'https://project01campgrounds.herokuapp.com/',
-    description: "App para publicar campings en un Cluster Map, con reviews y más. Hecho con HTML, EJS y Bootstrap.",
-    imgUrl: '/campgrounds.png',
-  },
+    title: 'XClone App',
+    link: 'https://github.com/IvoFarid/finalSX',
+    description: "Twitter clon, hecho con Symfony, SymfonyUX, Tailwind y Hotwire Turbo.",
+    imgUrl: '/symfony1.png',
+  }
+  ,
+  // ,
+  // {
+  //   title: 'Symfony01',
+  //   link: 'https://github.com/IvoFarid/symfony01',
+  //   description: "App que permite a los usuarios postear, comentar, seguirse, etc. Hecha con Symfony, Twig y Bootstrap.",
+  //   imgUrl: '/Symfony01Demo.png',
+  // },
+  // {
+  //   title: 'Campgrounds',
+  //   link: 'https://project01campgrounds.herokuapp.com/',
+  //   description: "App para publicar campings en un Cluster Map, con reviews y más. Hecho con HTML, EJS y Bootstrap.",
+  //   imgUrl: '/campgrounds.png',
+  // },
   {
     title: 'Chat App',
     link: 'https://chatapp-mi4r.onrender.com/',

@@ -13,7 +13,7 @@ export default function Header({language, setLanguage, colorMode, setColorMode}:
 
   
   return (
-    <header className="flex sticky top-0 items-start justify-between max-w-7xl mx-auto z-30 xl:items-center py-5">
+    <header className="bg-slate-200 dark:bg-gray-900 flex sticky top-0 items-start justify-between max-w-7xl mx-auto z-30 xl:items-center py-3">
       <motion.div 
         initial={{
           x: -500,

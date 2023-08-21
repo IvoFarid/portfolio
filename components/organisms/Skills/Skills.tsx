@@ -32,7 +32,7 @@ export default function Skills({language, colorMode}: Props) {
         </div>
       </div>
       {/* CAMBIE IMAGEN */}
-      <img src="darrow.png" alt="arrow" className={`${colorMode === "light" ? "invert-0" : "invert"} 2xl:mt-[5rem] xl:mt-[2rem] h-8 w-8`} />
+      <img src="darrow.png" alt="arrow" className={`${colorMode === "light" ? "invert-0" : "invert"} 2xl:mt-[5rem] xl:mt-[2rem] mt-10 h-8 w-8`} />
     </div>
   )
 }

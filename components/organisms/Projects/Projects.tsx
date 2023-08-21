@@ -17,7 +17,7 @@ export default function Projects({
       className="min-h-screen relative flex flex-col lg:max-w-4xl 2xl:max-w-7xl xl:max-w-6xl min-w-[400px] mx-auto z-0 items-center">
       <h3 className="2xl:text-5xl lg:text-4xl sm:text-3xl text-2xl font-bold absolute xl:top-[4.5rem] 2xl:top-20 text-[#40474e] dark:text-slate-300">{language==='english'?"Projects":'Proyectos'}</h3>
       {/* CAMBIE DIV ABAJO y H ARRIBA*/}
-      <div className="absolute md:top-32 xl:top-[7.5rem] 2xl:top-40 grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 grid-flow-row px-6 pt-0 pb-5">
+      <div className="absolute top-10 md:top-32 xl:top-[7.5rem] 2xl:top-40 grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 grid-flow-row px-6 pt-0 pb-5">
         {
           language==='english' ? (
             allProjectsEn.map((project,idx)=>{

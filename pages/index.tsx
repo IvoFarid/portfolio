@@ -23,7 +23,7 @@ export default function Home() {
       <section id="skills">
         <Skills language={language} colorMode={colorMode}/>
       </section>
-      <section id="projects" className="h-full">
+      <section id="projects" className="">
         <Projects language={language}/>
       </section>
     </div>

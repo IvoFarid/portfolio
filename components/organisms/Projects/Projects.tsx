@@ -11,9 +11,9 @@ export default function Projects({
 }: Props) {
   return (
     <motion.div 
-      initial={{opacity:0}}
-      whileInView={{opacity:1}}
-      transition={{duration:1}} 
+      // initial={{opacity:0}}
+      // whileInView={{opacity:1}}
+      // transition={{duration:1}} 
       className="min-h-screen relative flex flex-col lg:max-w-4xl 2xl:max-w-7xl xl:max-w-6xl min-w-[400px] mx-auto z-0 items-center">
       <h3 className="2xl:text-5xl lg:text-4xl sm:text-3xl text-2xl font-bold absolute xl:top-[4.5rem] 2xl:top-20 text-[#40474e] dark:text-slate-300">{language==='english'?"Projects":'Proyectos'}</h3>
       {/* CAMBIE DIV ABAJO y H ARRIBA*/}

@@ -40,6 +40,10 @@ export const allSkills = [
     imgUrl: '/symfony.svg'
   },
   {
+    name: 'Laravel',
+    imgUrl: '/laravel.png'
+  },
+  {
     name: 'MongoDB',
     imgUrl: '/mongodb.png'
   },

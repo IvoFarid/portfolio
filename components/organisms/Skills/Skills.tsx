@@ -20,7 +20,7 @@ export default function Skills({language, colorMode}: Props) {
                   <motion.div 
                   initial={{opacity:0}}
                   whileInView={{opacity:1}}
-                  transition={{duration:1,delay:idx*0.03}}
+                  transition={{duration:1,delay:idx*0.02}}
                   viewport={{once:true}}
                   key={idx} className="flex w-[48%] md:w-auto md:flex-col gap-2 items-center p-2 rounded-md border border-slate-300 dark:text-slate-300 dark:border-slate-800 hover:bg-[#40474e] hover:scale-105 duration-200 transition hover:text-white">
                     <img src={e.imgUrl} className="md:w-[45px] md:h-[45px] w-[30px] h-[30px] 2xl:h-[50px] 2xl:w-[50px] object-fit"/>

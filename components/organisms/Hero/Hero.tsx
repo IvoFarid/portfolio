@@ -50,9 +50,9 @@ export default function Hero({language, colorMode}: Props) {
               className="md:text-xl text-lg font-light text-start text-gray-600 dark:text-slate-300 md:w-[70%] 2xl:text-2xl">
                 {
                 language==='english' ? 
-                (<p>I&apos;m a 24 years old <span className="font-normal">Full Stack Junior Developer</span> that has been learning and working on several projects using technologies such as ReactJS, Material UI, Bootstrap and more on the frontend side. <br /> On the backend side, i&apos;ve worked with Laravel, Express, Sequelize, PHP and Symfony.</p>) 
+                (<p>I&apos;m a 25 years old <span className="font-normal">Web Developer</span> that has been learning and working with front-end technologies such as ReactJS, Material UI, Bootstrap, etc. <br /> On the backend side, i&apos;ve worked with Laravel, Symfony, Express and Sequelize.</p>) 
                 :
-                (<p><span className="font-normal">Desarrollador Junior Full Stack</span> de 24 años que viene realizando diferentes proyectos usando tecnologías como ReactJS, Material UI, Bootstrap y más desde el lado del frontend. <br /> Desde el lado del backend, trabajé con Laravel, Express, Sequelize, PHP y Symfony.</p>)
+                (<p><span className="font-normal">Desarrollador web</span> de 25 años que posee conocimientos en tecnologías front-end como ReactJS, Material UI, Bootstrap y más. <br /> Desde el lado del backend, trabajé con Laravel, Symfony, Express y Sequelize.</p>)
                 }
               </motion.div>
               <motion.div 

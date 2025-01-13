@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
+
 type Props = {
   language: string
   setLanguage: any
@@ -10,10 +11,9 @@ type Props = {
 
 export default function Header({language, setLanguage, colorMode, setColorMode}: Props) {
   // const [language, setLanguage] = useState('english');
-
   
   return (
-    <header className="bg-slate-200 dark:bg-gray-900 flex sticky top-0 items-start  max-w-7xl mx-auto z-30 xl:items-center py-3">
+    <header className="bg-slate-200 dark:bg-zinc-900 flex sticky top-0 items-start  max-w-7xl mx-auto z-30 xl:items-center py-3">
       <motion.div 
         initial={{
           x: -500,
@@ -30,15 +30,49 @@ export default function Header({language, setLanguage, colorMode, setColorMode}:
         }}
         className="flex flex-row justify-between w-full sm:justify-start items-center gap-1 md:gap-2 px-3">
         {/* <SocialIcon url="https://slack.com" fgColor="#26262c" bgColor="transparent"/> */}
-        <SocialIcon url="https://github.com/IvoFarid" fgColor={colorMode === "light" ? "black" : "white"} bgColor="transparent" className="max-h-[35px] max-w-[35px] min-h-[35px] min-w-[35px] hover:outline-1 hover:outline rounded-full transition"/>
+        <div style={{ color: colorMode === "light" ? "black" : "white" }}>
+        <SocialIcon url="https://github.com/IvoFarid" fgColor="currentColor" bgColor="transparent" className="max-h-[35px] max-w-[35px] min-h-[35px] min-w-[35px] hover:outline-1 hover:outline rounded-full transition"/>
+        </div>
+       
         {/* <SocialIcon url="https://linkedin.com" fgColor="#26262c" bgColor="transparent"/> */}
-        <SocialIcon url="mailto:ivan99edlp@gmail.com" network="google" fgColor={colorMode === "light" ? "black" : "white"} bgColor="transparent" className="max-h-[35px] max-w-[35px] min-h-[35px] min-w-[35px] hover:outline-1 hover:outline rounded-full transition"/>
-        <a href="/CV.pdf" download className="flex items-center select-none transition rounded-full p-1 bg-slate-200 dark:bg-gray-900 dark:text-slate-50 hover:outline-1 hover:outline">
-          <p className="text-sm md:text-2xl sm:ml-2">{language==='english' ? 'Resume':'Ver CV'}</p>
+        <div style={{ color: colorMode === "light" ? "black" : "white" }}>
+        <SocialIcon url="mailto:ivan99edlp@gmail.com" network="google" fgColor="currentColor" bgColor="transparent" className="max-h-[35px] max-w-[35px] min-h-[35px] min-w-[35px] hover:outline-1 hover:outline rounded-full transition"/>
+        </div>
+        <a href="/CV2025C.pdf" download className="flex items-center select-none transition rounded-full p-1 bg-slate-200 dark:bg-zinc-900 dark:text-slate-50 hover:outline-1 hover:outline">
+          <p className="text-sm md:text-xl sm:ml-2">{language==='english' ? 'Resume':'Ver CV'}</p>
           <img src="darrow.png" alt="arrow" className={`${colorMode === "light" ? "invert-0" : "invert"} h-6 w-6 md:h-8 md:w-8`} />
         </a>
-        <button onClick={()=>setLanguage('english')} className={`${ language === 'english' ? colorMode === "light" ? "bg-gray-900 text-white":"bg-slate-50 text-zinc-900" : colorMode === "light" ? "text-zinc-900":"text-white" } text-sm md:text-2xl sm:ml-2 py-1 px-2 hover:outline-1 hover:outline rounded-full transition`}>English</button>
+        {/* <button onClick={()=>setLanguage('english')} className={`${ language === 'english' ? colorMode === "light" ? "bg-gray-900 text-white":"bg-slate-50 text-zinc-900" : colorMode === "light" ? "text-zinc-900":"text-white" } text-sm md:text-2xl sm:ml-2 py-1 px-2 hover:outline-1 hover:outline rounded-full transition`}>English</button>
         <button onClick={()=>setLanguage('spanish')} className={`${ language === 'spanish' ? colorMode === "light" ? "bg-gray-900 text-white":"bg-slate-50 text-zinc-900" : colorMode === "light" ? "text-zinc-900":"text-white" } text-sm md:text-2xl sm:ml-2 py-1 px-2 hover:outline-1 hover:outline rounded-full transition`}>Español</button>
+         */}
+         <button
+  onClick={() => setLanguage('english')}
+  className={`text-sm md:text-xl sm:ml-2 py-1 px-2 hover:outline-1 hover:outline rounded-full transition ${
+    language === 'english'
+      ? colorMode === 'light'
+        ? 'bg-gray-900 text-white'
+        : 'bg-slate-50 text-zinc-900'
+      : colorMode === 'light'
+      ? 'text-zinc-900'
+      : 'text-white'
+  }`}
+>
+  English
+</button>
+<button
+  onClick={() => setLanguage('spanish')}
+  className={`text-sm md:text-xl sm:ml-2 py-1 px-2 hover:outline-1 hover:outline rounded-full transition ${
+    language === 'spanish'
+      ? colorMode === 'light'
+        ? 'bg-gray-900 text-white'
+        : 'bg-slate-50 text-zinc-900'
+      : colorMode === 'light'
+      ? 'text-zinc-900'
+      : 'text-white'
+  }`}
+>
+  Español
+</button>
         <button onClick={()=> setColorMode(colorMode === 'light' ? 'dark' : 'light')}>
           {colorMode === 'light' ? (
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="black" className="w-6 h-6">

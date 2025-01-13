@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { allSkills } from '../../../constants';
 type Props = {
   language: string
-  colorMode: string
+  colorMode: any
 }
 
 export default function Skills({language, colorMode}: Props) {

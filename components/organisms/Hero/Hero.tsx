@@ -5,7 +5,7 @@ import { BackgroundCircles } from '../../organisms';
 import Link from 'next/link'
 type Props = {
   language: string,
-  colorMode: string
+  colorMode: any
 }
 
 export default function Hero({language, colorMode}: Props) {

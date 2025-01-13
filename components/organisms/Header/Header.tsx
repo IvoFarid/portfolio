@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 type Props = {
   language: string
   setLanguage: any
-  colorMode: string
+  colorMode: string | null
   setColorMode: any
 }
 
